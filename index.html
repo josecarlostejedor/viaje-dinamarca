@@ -291,6 +291,22 @@
             color: #075985;
         }
 
+        .bridge-box {
+            background: #faf5ff;
+            border-left: 4px solid #9333ea;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #6b21a8;
+        }
+
+        .bridge-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #581c87;
+        }
+
         .wikiloc-btn {
             display: inline-flex;
             align-items: center;
@@ -308,6 +324,25 @@
 
         .wikiloc-btn:hover {
             background-color: #388e3c;
+        }
+
+        .info-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            padding: 6px 14px;
+            background-color: #8b5cf6;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+
+        .info-btn:hover {
+            background-color: #7c3aed;
         }
 
         .warning-box {
@@ -487,15 +522,27 @@
             <div class="day-content">
                 <div class="day-header">
                     <span class="day-date">21 de Agosto</span>
-                    <h3 class="day-title">Los Grandes Castillos del Norte</h3>
+                    <h3 class="day-title">Recogida de Coche, Puente Øresund & Castillos del Norte</h3>
                     <div class="day-meta">
-                        <span><i class="fa-solid fa-car"></i> ~150 km (Ruta Circular)</span>
+                        <span><i class="fa-solid fa-car"></i> ~160 km (Ruta Circular)</span>
+                        <span><i class="fa-solid fa-bridge"></i> Puente Øresund</span>
                         <span><i class="fa-solid fa-chess-rook"></i> Castillos Reales</span>
                         <span><i class="fa-solid fa-bed"></i> Noche en Copenhague</span>
                     </div>
                 </div>
                 <div class="day-body">
-                    <p>Recogida del coche de alquiler para completar una ruta circular por el norte de Seeland y regresar a dormir a Copenhague.</p>
+                    <p>Recogida del coche de alquiler en el aeropuerto de Copenhague para iniciar la ruta en carretera por Seeland.</p>
+                    
+                    <div class="bridge-box">
+                        <strong><i class="fa-solid fa-bridge-water"></i> Visita Especial: Puente de Øresund (Øresundsbron)</strong>
+                        Tras recoger el vehículo, parada para contemplar la monumental obra de ingeniería que une Dinamarca con Suecia a través del estrecho de Øresund.
+                        <br>
+                        <a href="https://www.oresundsbron.com/en/private" target="_blank" rel="noopener noreferrer" class="info-btn">
+                            <i class="fa-solid fa-globe"></i> Información Oficial Øresundsbron
+                        </a>
+                    </div>
+
+                    <p style="margin-top: 15px;">A continuación, ponemos rumbo al norte de la isla para completar la ruta monumental:</p>
                     <ul class="highlights-list">
                         <li><strong>Castillo de Frederiksborg (Hillerød):</strong> Impresionante castillo renacentista sobre un lago con jardines barrocos.</li>
                         <li><strong>Castillo de Kronborg (Helsingør):</strong> El famoso castillo de Elsinore de <em>Hamlet</em> frente al estrecho de Øresund.</li>
@@ -684,9 +731,9 @@
                         </tr>
                         <tr>
                             <td>21 Ago</td>
-                            <td>Hillerød & Helsingør (Ruta circular)</td>
+                            <td>Coche Aeropuerto $\rightarrow$ Øresundsbron $\rightarrow$ Hillerød & Helsingør</td>
                             <td>Copenhague</td>
-                            <td><i class="fa-solid fa-check" style="color:#22c55e;"></i> Sí (~150 km)</td>
+                            <td><i class="fa-solid fa-check" style="color:#22c55e;"></i> Sí (~160 km)</td>
                         </tr>
                         <tr>
                             <td>22 Ago</td>
@@ -733,3 +780,4 @@
 
 </body>
 </html>
+
